@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+.myheader{
+    background-color:transparent;
+    border-radius: 30px;
+}
+
+#mosklogo{
+     width: 30%;
+     height: 30%;
+}

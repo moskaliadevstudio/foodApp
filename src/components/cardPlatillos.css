@@ -1,0 +1,13 @@
+#desc-plat{
+    margin-top: 40px;
+    position: relative;
+}
+#divname{
+    height: 47px;
+    position:absolute;
+}
+
+#prec-plat{
+    margin-right: -15px;
+    color:#d72c51
+}

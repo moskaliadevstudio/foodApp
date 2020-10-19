@@ -1,0 +1,12 @@
+{
+    "platos": [
+        {
+            "nombre" : "Jamon ruso",
+            "precio" : 25
+        },
+        {
+            "nombre" : "Quesito",
+            "precio" : 50
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+h3{
+    color: white;
+}
+
+.carousel, .slide,
+.carousel .carousel-inner,
+.carousel .carousel-item,
+.carousel .carousel-item img,
+.carousel .carousel-control {
+  border-radius: 30px;
+  overflow: hidden;
+}
+.carousel-control-prev-icon {
+  background-image: url("../components/prevarr.png") !important;
+  width:40px !important;
+  height:40px !important;
+ }
+ .carousel-control-next-icon {
+  background-image: url("../components/nextarr.png") !important;
+  width:40px !important;
+  height:40px !important;
+ }
+
+ .carousel-indicators li {
+   background-color: #d72c51 !important;
+ }

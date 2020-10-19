@@ -1,5 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 .App {
   text-align: center;
+  background-color: #161616;
+}
+
+ #promostext{
+   color:whitesmoke;
+   text-shadow: -1px 3px 4px rgba(72,72,72,0.39);
+   font-family: 'Raleway', sans-serif;
+   font-size: 7.5vw;
+ }
+ #cont-menu{
+   background-color: #d72c51;
+   border-radius:30px;
+   width:35vw;
+ }
+ #menutext{
+  color: whitesmoke;
+  text-shadow: -1px 3px 4px rgba(72, 72, 72, 0.39);
+  font-family: 'Raleway', sans-serif;
+  font-size: 7.5vw;
+}
+#pordena{
+  font-family: 'Raleway', sans-serif;
 }
 
 .App-logo {

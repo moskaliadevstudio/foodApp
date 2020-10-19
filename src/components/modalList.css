@@ -1,0 +1,37 @@
+.modalMain{
+    border-radius:30px;
+    overflow: hidden;
+}
+.modalHeader{
+    background-color: #d72c51;
+    color:white;
+}
+.textheader{
+    text-align: center;
+}
+
+.btnmodal{
+    background-color: #d72c51;
+    color:white;
+    border-radius: 15px;
+    border-style: none;
+    width:70px;
+    height:40px;
+    outline-style: none;
+}
+.btnordenar{
+    background-color: rgb(102, 197, 102);
+    width:90px;
+}
+
+.btnmodal:focus{
+    outline:none;
+    outline-style: none;
+}
+
+.btnmodal:active{
+    background-color: #b32544;
+}
+.btnordenar:active{
+    background-color: rgb(78, 148, 78);
+}

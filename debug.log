@@ -1,0 +1,8 @@
+[1010/185506.613:ERROR:settings.cc(430)] Settings version is not 5
+[1010/202147.629:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1014/210405.299:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1014/220744.443:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1015/140512.583:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1016/153651.676:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1016/173828.794:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\AlexPH\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\4f6d44d5-9165-4f8c-be3e-660ee18dda21: El sistema no puede encontrar la ruta especificada. (0x3)
+[1017/212334.173:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)

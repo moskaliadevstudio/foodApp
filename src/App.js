@@ -1,25 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Slideshow from './components/slideshow';
+import Header from './components/header';
+import Container from 'react-bootstrap/Container'
+import AccordionCards from './components/Accordion';
+import FloatButton from './components/floatbutton';
+
+import {OrderProvider} from './components/context/ordercontext';
+import {CountProvider} from './components/context/countcontext';
 
 function App() {
+
   return (
+    <OrderProvider>
+    <CountProvider>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container>
+        <Header></Header>
+        <h1 id="promostext">Promociones</h1>
+        <Slideshow></Slideshow>
+        <div className="container mt-4" id="cont-menu">
+          <h1 className="mt-3" id="menutext">Menú</h1>
+        </div>
+        <p id="pordena" className="lead text-light">¡Selecciona lo que quieras y ordena!</p>
+        <AccordionCards className="mt-3"></AccordionCards>
+        <FloatButton></FloatButton>
+      </Container>
     </div>
+    </CountProvider>
+    </OrderProvider>
+    
   );
 }
 
