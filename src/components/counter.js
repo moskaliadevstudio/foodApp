@@ -22,7 +22,7 @@ const Counter = (props) => {
 
     function addItem(){
         setCounter(counter+1);
-        setOrderCount(...ordercount, {itemcount:itemcount+1});
+        setOrderCount(ordercount+1);
         var orden = {nombre:props.nombreplat, cantidad:counter+1 , precio: props.precioplat, total:props.precioplat};
         if(listorder.length<=0){
             setListOrders(listorder.concat(orden));
@@ -38,7 +38,6 @@ const Counter = (props) => {
                 encontrado.total = cant * precio;
             }
         }
-        finalCost(arrordenes);
     }
 
     function removeItem(){
@@ -46,7 +45,7 @@ const Counter = (props) => {
             setCounter(0);
         }else{
             setCounter(counter-1);
-            setOrderCount(...ordercount, {itemcount:itemcount-1});
+            setOrderCount(ordercount-1);
             var arrordenes = listorder;
             let  encontrado = arrordenes.find(item => item.nombre === props.nombreplat);
             if(encontrado == null){

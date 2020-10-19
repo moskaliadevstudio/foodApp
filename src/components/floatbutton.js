@@ -27,7 +27,7 @@ const FloatButton = () => {
             <button id="homestatic"  onClick={handleShow}>
             <FontAwesomeIcon icon={faUtensils} id="icon"></FontAwesomeIcon>
             <br></br>
-            <p id="smallnumber">{countOrder.itemcount}</p>
+            <p id="smallnumber">{countOrder}</p>
             </button>
                 <Modal show={show} className="modalMain">
                     <ModalList></ModalList>

@@ -21,7 +21,6 @@ const AccordionCards = () => {
   }
     return(
         <div>
-          <button onClick={showContext}>muestra</button>
         <Accordion defaultActiveKey="0">
         <Card className="card-main">
         <Card.Header>
