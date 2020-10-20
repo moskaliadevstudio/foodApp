@@ -1,37 +1,17 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { db } from "../firebase";
 import Accordion from 'react-bootstrap/Accordion'
 import Counter from './counter';
-import './cardPlatillos.css';
+import './cardProducts.css';
 
-const CardComidas = () => {
-
-    const datosComidas = {
-        comidas: []
-    }
-    const [foods, setComidas] = useState(datosComidas);
-
-    function getData(referencia = ''){
-        db.ref(referencia).on("value", snapshot =>{
-          let allComidas = [];
-          snapshot.forEach(snap=>{
-            allComidas.push(snap.val());
-          });
-          setComidas({comidas:allComidas})
-        })
-    }
-    
-    useEffect(() => {
-        getData('platillos');
-      },[])
+const CardProducts = (props) => {
     
     return(
         <div>
-            {foods.comidas.map(comida => {
+            {props.datos.map(comida => {
                 return( 
-                    <Accordion.Collapse eventKey="0">
-                        <div className="card mb-2" id="card-individual">
+                    <Accordion.Collapse eventKey={props.evento}>
+                        <div className="card mb-3" id="card-individual">
                         <div className="row">
                             <div className="col-md-4 container">
                                 <img src={comida.urlimagen} className="img-fluid" alt="imagen del plato" id="prodimg"></img>
@@ -55,4 +35,4 @@ const CardComidas = () => {
     )
 
 }
-export default CardComidas;
+export default CardProducts;

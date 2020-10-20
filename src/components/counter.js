@@ -12,13 +12,6 @@ const Counter = (props) => {
     const [listorder, setListOrders] = useContext(orderContext);
     const [ordercount, setOrderCount]  = useContext(countContext);
 
-    function finalCost(temparr = []){
-        temparr.forEach(element => {
-            var cuentatotal = 0;
-            cuentatotal = cuentatotal + element.total;
-            setOrderCount(...ordercount, {cuentafinal:cuentatotal});
-        })
-    }
 
     function addItem(){
         setCounter(counter+1);

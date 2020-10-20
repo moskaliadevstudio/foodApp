@@ -1,4 +1,5 @@
-import React, {useContext} from 'react';
+import React, {useState, useEffect} from 'react';
+import { db } from "../firebase";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
@@ -8,17 +9,44 @@ import 'font-awesome/css/font-awesome.min.css';
 import Accordion from 'react-bootstrap/Accordion'
 import './Accordion.css';
 //MY IMPORTS
-import CardComidas from './cardPlatillos';
-import CardBebidas from './cardBebidas';
-import {orderContext} from  './context/ordercontext';
+import CardProducts from './cardProducts';
 
 const AccordionCards = () => {
 
-  const [listorder, setListOrders] = useContext(orderContext);
-  
-  function showContext(){
-    console.log(listorder);
+  const datosComidas = {
+    comidas: [],
+    bebidas: []
   }
+  const [foods, setComidas] = useState(datosComidas);
+  const [drinks, setDrinks] = useState(datosComidas);
+
+  function getData(referencia = ''){
+      db.ref(referencia).on("value", snapshot =>{
+        let allComidas = [];
+        snapshot.forEach(snap=>{
+          allComidas.push(snap.val());
+        });
+        setComidas({comidas:allComidas})
+      })
+  }
+  function getDataDrinks(referencia = ''){
+      db.ref(referencia).on("value", snapshot =>{
+        let alldrinks = [];
+        snapshot.forEach(snap=>{
+          alldrinks.push(snap.val());
+        });
+        setDrinks({bebidas:alldrinks})
+      })
+  }
+
+  useEffect(() => {
+      getData('platillos');
+      getDataDrinks('bebidas');
+  },[])
+
+  var eventfoods = "0";
+  var eventdrinks = "1";
+
     return(
         <div>
         <Accordion defaultActiveKey="0">
@@ -27,7 +55,7 @@ const AccordionCards = () => {
         <Accordion.Toggle as={Button} eventKey="0" id="toggle-acc">
         <h4 id="sec-title">Comidas</h4>
         </Accordion.Toggle>
-          <CardComidas></CardComidas>
+          <CardProducts datos = {foods.comidas} evento={eventfoods}></CardProducts>
         </Card.Header>
         </Card>
         <Card className="card-main">
@@ -35,7 +63,7 @@ const AccordionCards = () => {
             <Accordion.Toggle as={Button} eventKey="1" id="toggle-acc" >
               <h4 id="sec-title">Bebidas</h4>
             </Accordion.Toggle>
-            <CardBebidas></CardBebidas>
+            <CardProducts datos = {drinks.bebidas} evento={eventdrinks}></CardProducts>
           </Card.Header>
         </Card>
         <Card className="card-main">

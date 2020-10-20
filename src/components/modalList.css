@@ -35,3 +35,21 @@
 .btnordenar:active{
     background-color: rgb(78, 148, 78);
 }
+
+
+.totaltext{
+    margin-top: 5px;
+    color:#d72c51;
+    text-align: center;
+    float:  right;
+}
+.formdatos{
+    margin-top: -10px;
+}
+.inputdomilicio{
+    font-size: 16px;
+}
+
+.comentarea{
+    resize:none;
+}

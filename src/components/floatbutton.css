@@ -25,3 +25,7 @@ box-shadow: -3px 10px 28px -4px rgba(0,0,0,1);
     margin-top: -5px;
     text-align: center;
 }
+
+.btnenable{
+    opacity: 0.5;
+}
