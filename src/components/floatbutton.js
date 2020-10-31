@@ -62,8 +62,15 @@ const FloatButton = () => {
 
     const handleSendOrder = () => {
         var letters = /^[A-Za-z]+$/;
-        if(finalorder.nombrecliente === '' || finalorder.domicilio === '' || 
+        /*if(finalorder.nombrecliente === '' || finalorder.domicilio === '' || 
          !finalorder.nombrecliente.match(letters)){
+            console.log('empty input');
+        }else{
+            enviaOrden();
+            setTimeout(function(){ window.location.reload() }, 3000);
+        }*/
+        if(finalorder.nombrecliente === '' || finalorder.domicilio === '' || 
+            finalorder.nombrecliente === ' '){
             console.log('empty input');
         }else{
             enviaOrden();
