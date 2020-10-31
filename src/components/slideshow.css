@@ -2,6 +2,14 @@ h3{
     color: white;
 }
 
+.divimg{
+  background-color:black;
+}
+
+.imgpromo{
+  opacity: 0.7;
+}
+
 .carousel, .slide,
 .carousel .carousel-inner,
 .carousel .carousel-item,
@@ -23,4 +31,13 @@ h3{
 
  .carousel-indicators li {
    background-color: #d72c51 !important;
+ }
+
+ .titulo-promo{
+   color:white;
+   text-shadow: 0px 3px 4px rgba(48, 48, 48, 1);
+ }
+
+ .subtitulo{
+  text-shadow: 0px 3px 4px rgba(48, 48, 48, 1);
  }

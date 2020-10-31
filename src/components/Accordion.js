@@ -15,10 +15,12 @@ const AccordionCards = () => {
 
   const datosComidas = {
     comidas: [],
-    bebidas: []
+    bebidas: [],
+    extras: []
   }
   const [foods, setComidas] = useState(datosComidas);
   const [drinks, setDrinks] = useState(datosComidas);
+  const [extras, setExtras] = useState(datosComidas);
 
   function getData(referencia = ''){
       db.ref(referencia).on("value", snapshot =>{
@@ -38,10 +40,20 @@ const AccordionCards = () => {
         setDrinks({bebidas:alldrinks})
       })
   }
+  function getDataExtras(referencia = ''){
+      db.ref(referencia).on("value", snapshot =>{
+        let allextras = [];
+        snapshot.forEach(snap=>{
+          allextras.push(snap.val());
+        });
+        setExtras({extras:allextras})
+      })
+  }
 
   useEffect(() => {
       getData('platillos');
       getDataDrinks('bebidas');
+      getDataExtras('extras');
   },[])
 
   var eventfoods = "0";
@@ -61,9 +73,9 @@ const AccordionCards = () => {
         <Card className="card-main">
           <Card.Header>
             <Accordion.Toggle as={Button} eventKey="1" id="toggle-acc" >
-              <h4 id="sec-title">Bebidas</h4>
+              <h4 id="sec-title">Complementos</h4>
             </Accordion.Toggle>
-            <CardProducts datos = {drinks.bebidas} evento={eventdrinks}></CardProducts>
+            <CardProducts datos = {extras.extras} evento={eventdrinks}></CardProducts>
           </Card.Header>
         </Card>
         <Card className="card-main">
@@ -82,4 +94,3 @@ const AccordionCards = () => {
 }
 
 export default AccordionCards;
-

@@ -11,16 +11,31 @@
    font-family: 'Raleway', sans-serif;
    font-size: 7.5vw;
  }
+
+ .container-zonas{
+   background-color: #d60e0e;
+   border-radius:30px;
+   height:auto;
+ }
+ .icono-zona{
+   color:white;
+   font-size: 25px;
+ }
  #cont-menu{
-   background-color: #d72c51;
+   background-color: #d60e0e;
    border-radius:30px;
    width:35vw;
+ }
+ #zonastext{
+  color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: -1px 3px 4px rgba(72, 72, 72, 0.39);
  }
  #menutext{
   color: whitesmoke;
   text-shadow: -1px 3px 4px rgba(72, 72, 72, 0.39);
   font-family: 'Raleway', sans-serif;
-  font-size: 7.5vw;
+  font-size: 8.5vw;
 }
 #pordena{
   font-family: 'Raleway', sans-serif;

@@ -42,7 +42,7 @@ const Counter = (props) => {
             var arrordenes = listorder;
             let  encontrado = arrordenes.find(item => item.nombre === props.nombreplat);
             if(encontrado == null){
-                console.log('no hago nada');
+                console.log('nothing');
             }else{
                 encontrado.cantidad = counter-1;
                 var precio = parseInt(encontrado.precio);
@@ -64,7 +64,7 @@ const Counter = (props) => {
     </button>
     <strong className="mr-2 font-weight-bold" id="cantidad">{counter}</strong>
     <button className="d-inline-block" id="boton2" onClick={removeItem}>
-        <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon>
+    <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon>
     </button>
     </div>
     );
