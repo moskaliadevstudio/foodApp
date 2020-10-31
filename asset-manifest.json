@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "//alexphdz.github.io/foodApp/static/css/main.65a71f2e.chunk.css",
+    "main.js": "//alexphdz.github.io/foodApp/static/js/main.3bbfbbca.chunk.js",
+    "main.js.map": "//alexphdz.github.io/foodApp/static/js/main.3bbfbbca.chunk.js.map",
+    "runtime-main.js": "//alexphdz.github.io/foodApp/static/js/runtime-main.c113ef3d.js",
+    "runtime-main.js.map": "//alexphdz.github.io/foodApp/static/js/runtime-main.c113ef3d.js.map",
+    "static/css/2.35b99eee.chunk.css": "//alexphdz.github.io/foodApp/static/css/2.35b99eee.chunk.css",
+    "static/js/2.43f60c98.chunk.js": "//alexphdz.github.io/foodApp/static/js/2.43f60c98.chunk.js",
+    "static/js/2.43f60c98.chunk.js.map": "//alexphdz.github.io/foodApp/static/js/2.43f60c98.chunk.js.map",
+    "index.html": "//alexphdz.github.io/foodApp/index.html",
+    "precache-manifest.198e2ccc1fd0e4eabf993ea4b8aabdac.js": "//alexphdz.github.io/foodApp/precache-manifest.198e2ccc1fd0e4eabf993ea4b8aabdac.js",
+    "service-worker.js": "//alexphdz.github.io/foodApp/service-worker.js",
+    "static/css/2.35b99eee.chunk.css.map": "//alexphdz.github.io/foodApp/static/css/2.35b99eee.chunk.css.map",
+    "static/css/main.65a71f2e.chunk.css.map": "//alexphdz.github.io/foodApp/static/css/main.65a71f2e.chunk.css.map",
+    "static/js/2.43f60c98.chunk.js.LICENSE.txt": "//alexphdz.github.io/foodApp/static/js/2.43f60c98.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "//alexphdz.github.io/foodApp/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/slideshow.css": "//alexphdz.github.io/foodApp/static/media/prevarr.390e67b2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c113ef3d.js",
+    "static/css/2.35b99eee.chunk.css",
+    "static/js/2.43f60c98.chunk.js",
+    "static/css/main.65a71f2e.chunk.css",
+    "static/js/main.3bbfbbca.chunk.js"
+  ]
+}
