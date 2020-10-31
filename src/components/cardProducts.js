@@ -18,7 +18,7 @@ const CardProducts = (props) => {
                             </div>
                             <div className="col-md-8">
                                 <div className="container col-12 mt-2" id="divname">
-                                    <h6 className="card-title text-dark" style={{float:"left"}}>{comida.nombre}</h6>
+                                    <h6 className="card-title text-dark comida-nombre" style={{float:"left"}}>{comida.nombre}</h6>
                                      <p className="lead" id="prec-plat">${comida.precio}.00</p>
                                 </div>
                             <div className="col-12 d-block">

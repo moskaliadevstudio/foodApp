@@ -57,7 +57,8 @@ const AccordionCards = () => {
   },[])
 
   var eventfoods = "0";
-  var eventdrinks = "1";
+  var eventextras = "1";
+  var eventobebidas = "2";
 
     return(
         <div>
@@ -75,14 +76,15 @@ const AccordionCards = () => {
             <Accordion.Toggle as={Button} eventKey="1" id="toggle-acc" >
               <h4 id="sec-title">Complementos</h4>
             </Accordion.Toggle>
-            <CardProducts datos = {extras.extras} evento={eventdrinks}></CardProducts>
+            <CardProducts datos = {extras.extras} evento={eventextras}></CardProducts>
           </Card.Header>
         </Card>
         <Card className="card-main">
           <Card.Header>
-            <Accordion.Toggle as={Button}  eventKey="1" id="toggle-acc">
-              <h4 id="sec-title">Postres</h4>
+            <Accordion.Toggle as={Button}  eventKey="2" id="toggle-acc">
+              <h4 id="sec-title">Bebidas</h4>
             </Accordion.Toggle>
+            <CardProducts datos = {drinks.bebidas} evento={eventobebidas}></CardProducts>
           </Card.Header>
         </Card>
         </Accordion>
