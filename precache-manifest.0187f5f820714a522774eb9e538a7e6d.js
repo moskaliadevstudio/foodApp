@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a7de8f1add241d270205d02480b8b69c",
+    "revision": "07f1ff0c296af754ee5f624357030725",
     "url": "//moskaliadevstudio.github.io/foodApp/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "//moskaliadevstudio.github.io/foodApp/static/css/2.318979b2.chunk.css"
   },
   {
-    "revision": "a2400f3609ea04d1d022",
+    "revision": "b0069a11b90403dc9505",
     "url": "//moskaliadevstudio.github.io/foodApp/static/css/main.ec3dfe1c.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "//moskaliadevstudio.github.io/foodApp/static/js/2.a4967671.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a2400f3609ea04d1d022",
-    "url": "//moskaliadevstudio.github.io/foodApp/static/js/main.fb008ae8.chunk.js"
+    "revision": "b0069a11b90403dc9505",
+    "url": "//moskaliadevstudio.github.io/foodApp/static/js/main.735dd173.chunk.js"
   },
   {
     "revision": "89473eca5970ea9fcbd5",

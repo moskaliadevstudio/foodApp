@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "//moskaliadevstudio.github.io/foodApp/static/css/main.ec3dfe1c.chunk.css",
-    "main.js": "//moskaliadevstudio.github.io/foodApp/static/js/main.fb008ae8.chunk.js",
-    "main.js.map": "//moskaliadevstudio.github.io/foodApp/static/js/main.fb008ae8.chunk.js.map",
+    "main.js": "//moskaliadevstudio.github.io/foodApp/static/js/main.735dd173.chunk.js",
+    "main.js.map": "//moskaliadevstudio.github.io/foodApp/static/js/main.735dd173.chunk.js.map",
     "runtime-main.js": "//moskaliadevstudio.github.io/foodApp/static/js/runtime-main.58705b8b.js",
     "runtime-main.js.map": "//moskaliadevstudio.github.io/foodApp/static/js/runtime-main.58705b8b.js.map",
     "static/css/2.318979b2.chunk.css": "//moskaliadevstudio.github.io/foodApp/static/css/2.318979b2.chunk.css",
     "static/js/2.a4967671.chunk.js": "//moskaliadevstudio.github.io/foodApp/static/js/2.a4967671.chunk.js",
     "static/js/2.a4967671.chunk.js.map": "//moskaliadevstudio.github.io/foodApp/static/js/2.a4967671.chunk.js.map",
     "index.html": "//moskaliadevstudio.github.io/foodApp/index.html",
-    "precache-manifest.f31c5856eb05d2cdfdd23ae5381a5e04.js": "//moskaliadevstudio.github.io/foodApp/precache-manifest.f31c5856eb05d2cdfdd23ae5381a5e04.js",
+    "precache-manifest.0187f5f820714a522774eb9e538a7e6d.js": "//moskaliadevstudio.github.io/foodApp/precache-manifest.0187f5f820714a522774eb9e538a7e6d.js",
     "service-worker.js": "//moskaliadevstudio.github.io/foodApp/service-worker.js",
     "static/css/2.318979b2.chunk.css.map": "//moskaliadevstudio.github.io/foodApp/static/css/2.318979b2.chunk.css.map",
     "static/css/main.ec3dfe1c.chunk.css.map": "//moskaliadevstudio.github.io/foodApp/static/css/main.ec3dfe1c.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.318979b2.chunk.css",
     "static/js/2.a4967671.chunk.js",
     "static/css/main.ec3dfe1c.chunk.css",
-    "static/js/main.fb008ae8.chunk.js"
+    "static/js/main.735dd173.chunk.js"
   ]
 }
