@@ -3,7 +3,7 @@
     overflow: hidden;
 }
 .modalHeader{
-    background-color: #d72c51;
+    background-color: #d60e0e;
     color:white;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .btnmodal{
-    background-color: #d72c51;
+    background-color: #d60e0e;
     color:white;
     border-radius: 15px;
     border-style: none;
@@ -31,7 +31,7 @@
 }
 
 .btnmodal:active{
-    background-color: #b32544;
+    background-color: #ad1212;
 }
 .btnordenar:active{
     background-color: rgb(78, 148, 78);
@@ -40,7 +40,7 @@
 
 .totaltext{
     margin-top: 5px;
-    color:#d72c51;
+    color:#d60e0e;
     text-align: center;
     float:  right;
 }
