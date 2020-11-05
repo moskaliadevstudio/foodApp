@@ -9,7 +9,7 @@ const Entregas = () =>{
         <div>
             <div className="mt-3 container-zonas container mt-3">
             <FontAwesomeIcon icon={faMapMarkedAlt} className="mr-3 icono-zona"/>
-            <h4 className="heading-5 d-inline" id="zonastext">Zonas de entrega</h4>
+            <h4 className="heading-5 d-inline" id="zonastext">Zonas de entrega:</h4>
             </div>
             <ul className="text-light mt-3 lead text-center">
                 <li>Colonia "Rosales"</li>

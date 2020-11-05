@@ -4,8 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
 import 'font-awesome/css/font-awesome.min.css';
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-//import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import Accordion from 'react-bootstrap/Accordion'
 import './Accordion.css';
 //MY IMPORTS

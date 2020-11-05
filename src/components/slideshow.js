@@ -7,7 +7,7 @@ const Slideshow = () =>{
     return(
     <div>
         <div id="div-promos-title">
-            <h3 id="promostext">Promociones</h3>
+            <h3 id="promostext">Promociones:</h3>
         </div>
     <Carousel>
           <Carousel.Item>

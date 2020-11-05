@@ -51,17 +51,24 @@ const FloatButton = () => {
             mensaje += '%0A%0D' + emojifood + product.cantidad + 'x' + ' ' + product.nombre + ' - ' + '$' + product.total;
         });
         var urlp1 = 'https://api.whatsapp.com/send?phone=527443496943&text=' + mensaje +  '%0A%0D';
-        var urlp2 = urlp1 + emojimoney + ' Total: ' + '$' +cost + '%0A%0D' + '%0A%0D'
-                    + 'Datos de envío: ' + '%0A%0D' + emojiclient +' Nombre del cliente: ' 
-                    + finalorder.nombrecliente + '%0A%0D' + emojilocation +' Dirección de envío: ' + 
-                    finalorder.domicilio + '%0A%0D' + emojicomment +' Comentarios: ' 
-                    + finalorder.comentarios + '%0A%0D' + '¡Gracias!' + emojispark + '&data=&app_absent=';
-        console.log(mensaje);
+        if(finalorder.comentarios != '' || finalorder.comentarios != ' '){
+            var urlp2 = urlp1 + emojimoney + ' Total: ' + '$' +cost + '%0A%0D' + '%0A%0D'
+                        + 'Datos de envío: ' + '%0A%0D' + emojiclient +' Nombre del cliente: ' 
+                        + finalorder.nombrecliente + '%0A%0D' + emojilocation +' Dirección de envío: ' + 
+                        finalorder.domicilio + '%0A%0D' + emojicomment +' Comentarios: ' 
+                        + finalorder.comentarios + '%0A%0D' + '¡Gracias!' + emojispark + '&data=&app_absent=';
+            console.log(mensaje);
+        }else{
+            var urlp2 = urlp1 + emojimoney + ' Total: ' + '$' +cost + '%0A%0D' + '%0A%0D'
+                        + 'Datos de envío: ' + '%0A%0D' + emojiclient +' Nombre del cliente: ' 
+                        + finalorder.nombrecliente + '%0A%0D' + emojilocation +' Dirección de envío: ' + 
+                        finalorder.domicilio + '%0A%0D' + '¡Gracias!' + emojispark + '&data=&app_absent=';
+        }
         window.open(urlp2);
     }
 
     const handleSendOrder = () => {
-        var letters = /^[A-Za-z]+$/;
+        //var letters = /^[A-Za-z]+$/; //No se está usandp
         /*if(finalorder.nombrecliente === '' || finalorder.domicilio === '' || 
          !finalorder.nombrecliente.match(letters)){
             console.log('empty input');
