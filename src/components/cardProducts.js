@@ -18,11 +18,11 @@ const CardProducts = (props) => {
                             </div>
                             <div className="col-md-8">
                                 <div className="mt-2 col-md-12 w-75" id="divname">
-                                    <h6 className="card-title text-dark comida-nombre" style={{float:"left"}}>{comida.nombre}</h6>
-                                     <p className="lead float-right" id="prec-plat">${comida.precio}.00</p>
+                                    <h6 className="card-title text-dark comida-nombre text-left">{comida.nombre}</h6>
                                 </div>
+                                <p className="lead float-right" id="prec-plat">${comida.precio}.00</p>
                             <div className="col-12 d-block w-75">
-                            <small className="text-left align-content-center d-block w-50" id="desc-plat">{comida.descripcion}</small>
+                            <small className="pt-3 text-left align-content-center d-block w-75" id="desc-plat">{comida.descripcion}</small>
                             </div>
                             <Counter nombreplat={comida.nombre} precioplat={comida.precio}></Counter>
                             </div>

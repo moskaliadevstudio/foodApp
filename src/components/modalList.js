@@ -1,5 +1,6 @@
 import React, {useContext}  from 'react';
 import Modal from 'react-bootstrap/Modal'
+import Form from 'react-bootstrap/Form'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './modalList.css';
 
@@ -15,6 +16,7 @@ const ModalList = (props) => {
     const changeData = (e) => {
         const{name,value} = e.target;
         setFinalOrder({...finalorder, [name]:value});
+        console.log(finalorder);
     }
 
     
@@ -68,12 +70,19 @@ const ModalList = (props) => {
                                 name="domicilio"
                             />
                             <textarea 
-                                className="form-control comentarea" 
+                                className="form-control comentarea mt-2 mb-2" 
                                 placeholder="Comentarios. Ej: Sin cebolla, sin hielo, etc. (opcional)" 
                                 rows="3" 
                                 onChange={changeData} 
                                 name="comentarios"
                             />
+                            <label>Denominación de billete: </label>
+                             <Form.Control as="select" name="denom" className="w-100" onChange={changeData}>
+                                    <option selected value="Pago exacto">Pago exacto</option>
+                                    <option>$100</option>
+                                    <option>$200</option>
+                                    <option>$500</option>
+                            </Form.Control> 
                         </div>
                 </Modal.Body>
                     </div> 

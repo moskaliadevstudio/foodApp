@@ -38,32 +38,31 @@ const FloatButton = () => {
 
     function enviaOrden(){
         let emojifood = String.fromCodePoint(0x1F37D);
-        let emojihello = String.fromCodePoint(0x1F44B);
-        let emojimoney = String.fromCodePoint(0x1F4B8);
+        let emojimoney = String.fromCodePoint(0x1F4B0);
+        let emojidenom = String.fromCodePoint(0x1F4B5);
         let emojiclient = String.fromCodePoint(0x1F464);
         let emojilocation = String.fromCodePoint(0x1F4CC);
         let emojicomment = String.fromCodePoint(0x1F4AC);
         let emojispark = String.fromCodePoint(0x2728);
-        let mensaje = emojihello + ' ' + '¡Hola Restaurante! Esta es mi orden: ' + '%0A%0D';
+        let mensaje = '¡Hola Restaurante! Esta es mi orden: ' + '%0A%0D';
         
         let arrproducts = listorder;
         arrproducts.map(product => {
             mensaje += '%0A%0D' + emojifood + product.cantidad + 'x' + ' ' + product.nombre + ' - ' + '$' + product.total;
         });
         var urlp1 = 'https://api.whatsapp.com/send?phone=527443496943&text=' + mensaje +  '%0A%0D';
-        if(finalorder.comentarios != '' || finalorder.comentarios != ' '){
-            var urlp2 = urlp1 + emojimoney + ' Total: ' + '$' +cost + '%0A%0D' + '%0A%0D'
-                        + 'Datos de envío: ' + '%0A%0D' + emojiclient +' Nombre del cliente: ' 
-                        + finalorder.nombrecliente + '%0A%0D' + emojilocation +' Dirección de envío: ' + 
-                        finalorder.domicilio + '%0A%0D' + emojicomment +' Comentarios: ' 
-                        + finalorder.comentarios + '%0A%0D' + '¡Gracias!' + emojispark + '&data=&app_absent=';
-            console.log(mensaje);
-        }else{
-            var urlp2 = urlp1 + emojimoney + ' Total: ' + '$' +cost + '%0A%0D' + '%0A%0D'
-                        + 'Datos de envío: ' + '%0A%0D' + emojiclient +' Nombre del cliente: ' 
-                        + finalorder.nombrecliente + '%0A%0D' + emojilocation +' Dirección de envío: ' + 
-                        finalorder.domicilio + '%0A%0D' + '¡Gracias!' + emojispark + '&data=&app_absent=';
+        if(finalorder.comentarios === '' || finalorder.comentarios === ' '){
+            finalorder.comentarios = 'Sin comentarios.';
         }
+        if(finalorder.denom === ""){
+            finalorder.denom = 'Pago exacto';
+        }
+        var urlp2 = urlp1 + emojimoney + ' Total: ' + '$' +cost + '%0A%0D' + '%0A%0D'
+                    + 'Datos de envío: ' + '%0A%0D' + emojiclient +' Nombre del cliente: ' 
+                    + finalorder.nombrecliente + '%0A%0D' + emojilocation +' Dirección de envío: ' + 
+                    finalorder.domicilio + '%0A%0D' + emojidenom + ' Pago con billete de: ' + finalorder.denom + '%0A%0D' + emojicomment +' Comentarios: ' 
+                    + finalorder.comentarios + '%0A%0D' + '¡Gracias!' + emojispark + '&data=&app_absent=';
+        console.log(mensaje);
         window.open(urlp2);
     }
 

@@ -9,6 +9,7 @@ export const FinalordProvider = (props) => {
         nombrecliente:'',
         domicilio: '',
         comentarios: '',
+        denom: '',
     });
 
     return(
